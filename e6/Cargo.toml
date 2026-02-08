@@ -1,0 +1,6 @@
+[package]
+name = "hello_world" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+edition = "2024"       # the edition of Rust to use
+authors = ["Ignacio Castillo <jesus.castillo.b@cinvestav.mx>"] # the authors of the package
+description = "A simple hello world application in Rust"
