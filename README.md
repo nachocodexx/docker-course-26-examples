@@ -13,6 +13,10 @@ This repository contains the code examples and exercises for the Virtualization 
 - [Exercise 4: Build, tag, and push an image](e4/README.md)
 - [Exercise 5: Caching layers](e5/README.md)
 - [Exercise 6: Multi-stage builds](e6/README.md)
+- [Exercise 7: Bind volumes](e7/README.md)
+- [Exercise 8: Volumes](e8/README.md)
+- [Exercise 9: Network bridge](e9/README.md)
+- [Exercise 10: Bridge and default bridge](e10/README.md)
 
 
 ## Contributing
