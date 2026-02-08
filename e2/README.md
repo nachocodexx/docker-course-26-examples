@@ -1,4 +1,4 @@
-# Exercise 2: Create a Dockerfile and build an image
+# Exercise 2: Add a file and set a command
 
 Now that you have create an image with Node.js installed, let's build a image.
 
