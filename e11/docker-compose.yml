@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  bar-service:
+    build: .
+    environment:
+      - PLOT_TYPE=bar
+    networks:
+      - my-net
+
+  box-service:
+    build: .
+    environment:
+      - PLOT_TYPE=box
+    networks:
+      - my-net
+
+  hist-service:
+    build: .
+    environment:
+      - PLOT_TYPE=hist
+    networks:
+      - my-net
+
+  my-load-balancer:
+    build: .
+    # OVERRIDE: Run the LB script
+    command: python lb.py
+    ports:
+      - "8080:80"
+    depends_on:
+      - bar-service
+      - box-service
+      - hist-service
+    networks:
+      - my-net
+
+networks:
+  my-net:

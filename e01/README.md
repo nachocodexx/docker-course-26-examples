@@ -47,4 +47,6 @@ fc674838ad3b   21 seconds ago   /bin/bash                                       
 
 ```bash
 docker run --rm image1 node -v
+# interactive mode
+docker run --name=c1 -ti image1
 ```
